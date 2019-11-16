@@ -7,7 +7,6 @@ class WeatherDetails {
     public function __construct($location) {
         $this->location = $location;
     }
-
     public function OpenWeatherMapProvider() {
         $apiKey = "2c9375bc819c5b73effd9ea7a64392c1";
         $googleApiUrl = "http://api.openweathermap.org/data/2.5/weather?q=" . $this->location . ",uk&lang=en&units=metric&APPID=" . $apiKey;
